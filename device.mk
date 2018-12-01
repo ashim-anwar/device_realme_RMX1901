@@ -352,6 +352,12 @@ PRODUCT_PACKAGES += \
     ueventd.qcom.rc \
     init.devicesetting.rc
 
+# RCS
+PRODUCT_PACKAGES += \
+    com.android.ims.rcsmanager \
+    PresencePolling \
+    RcsService
+
 # Recovery
 PRODUCT_PACKAGES += \
     librecovery_updater_RMX1901
