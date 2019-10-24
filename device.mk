@@ -115,6 +115,11 @@ PRODUCT_PACKAGES += \
     vendor.display.config@1.7 \
     vendor.qti.hardware.display.allocator@1.0-service
 
+
+# Camera Helper
+PRODUCT_PACKAGES += \
+    RealmeCameraHelper
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-impl \
