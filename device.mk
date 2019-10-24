@@ -105,6 +105,13 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.camera.postproc@1.0.vendor
 
 # Device-specific settings
+
+
+# Camera Helper
+PRODUCT_PACKAGES += \
+    RealmeCameraHelper
+
+# Context Hub
 PRODUCT_PACKAGES += \
 
 # Display
