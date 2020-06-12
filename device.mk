@@ -181,7 +181,8 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-
+    android.hardware.biometrics.fingerprint@2.3-service.x \
+    vendor.oppo.hardware.biometrics.fingerprint@2.1
 
 # Freeform Multiwindow
 PRODUCT_COPY_FILES += \
