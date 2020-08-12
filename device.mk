@@ -345,7 +345,7 @@ PRODUCT_COPY_FILES += \
 
 # camera Motor
 PRODUCT_PACKAGES += \
-    lineage.camera.motor@1.0-service.realme_sdm710
+    vendor.lineage.camera.motor@1.0-service.realme_sdm710
 
 # Sensors
 PRODUCT_PACKAGES += \
