@@ -46,12 +46,7 @@ on post-fs-data
     # For Egis FOD
     mkdir /data/vendor/optical_fingerprint   0770 system system
 
-service vendor.fps_hal.realme_sdm710 /vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service.realme_sdm710
+service fps_hal.RMX1901 /vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service.realme_sdm710
     class late_start
     user system
     group system input
-    
-service oppo_fingerprints_sh /vendor/bin/sh /vendor/bin/init.oppo.fingerprints.sh
-    class main
-    user root
-    oneshot
