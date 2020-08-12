@@ -140,6 +140,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     vendor/xtended/config/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml:vendor/etc/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml
 
+# FOD animations
+EXTRA_FOD_ANIMATIONS := true
+
+TARGET_HAS_FOD := true
+
 # FM
 PRODUCT_PACKAGES += \
     FM2 \
