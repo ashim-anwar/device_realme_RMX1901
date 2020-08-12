@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Realme XT is a product launched with pie
+# Realme X is a product launched with pie
 $(call inherit-product, build/make/target/product/product_launched_with_p.mk)
 
 # Inherit from those products. Most specific first.
@@ -12,7 +12,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Get non-open-source specific aspects
-$(call inherit-product-if-exists, vendor/realme/RMX1921/RMX1921-vendor.mk)
+$(call inherit-product-if-exists, vendor/realme/RMX1901/RMX1901-vendor.mk)
 
 # Enable updating of APEXes
 #$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
@@ -228,6 +228,7 @@ PRODUCT_PACKAGES += \
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay-lineage \
     $(LOCAL_PATH)/overlay
+    $(LOCAL_PATH)/overlay-xtended
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
@@ -328,7 +329,7 @@ PRODUCT_PACKAGES += \
 
 # Recovery
 PRODUCT_PACKAGES += \
-    librecovery_updater_RMX1921
+    librecovery_updater_RMX1901
 
 # RenderScript
 PRODUCT_PACKAGES += \
@@ -377,7 +378,7 @@ PRODUCT_PACKAGES += \
 
 # Touch
 PRODUCT_PACKAGES += \
-    vendor.lineage.touch@1.0-service.RMX1921
+    vendor.lineage.touch@1.0-service.RMX1901
     
 # Trust HAL
 PRODUCT_PACKAGES += \

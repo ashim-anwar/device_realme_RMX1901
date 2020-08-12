@@ -15,15 +15,15 @@
  * limitations under the License.
  */
 
+#include <sys/mman.h>
+#include <sys/stat.h>
+#include <sys/types.h>
 #include <errno.h>
 #include <fcntl.h>
 #include <stdint.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <sys/mman.h>
-#include <sys/stat.h>
-#include <sys/types.h>
 #include <unistd.h>
 
 #include <string>
@@ -188,6 +188,6 @@ Value * VerifyTrustZoneFn(const char *name, State *state,
     return StringValue(strdup(ret ? "1" : "0"));
 }
 
-void Register_librecovery_updater_RMX1921() {
-    RegisterFunction("RMX1921.verify_trustzone", VerifyTrustZoneFn);
+void Register_librecovery_updater_RMX1901() {
+    RegisterFunction("RMX1901.verify_trustzone", VerifyTrustZoneFn);
 }
