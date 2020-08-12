@@ -178,9 +178,20 @@ TARGET_USE_AOSP_SURFACEFLINGER := true
 VENDOR_SECURITY_PATCH := 2020-06-05
 
 # Sepolicy
-include device/qcom/sepolicy/sepolicy.mk
+BOARD_PLAT_PRIVATE_SEPOLICY_DIR += \
+    device/qcom/sepolicy/generic/private \
+    device/qcom/sepolicy/qva/private
+
+BOARD_PLAT_PUBLIC_SEPOLICY_DIR += \
+    device/qcom/sepolicy/generic/public \
+    device/qcom/sepolicy/qva/public
+
+BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
+BOARD_PLAT_PUBLIC_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/public
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
+
+SELINUX_IGNORE_NEVERALLOWS := true
 
 # System-as-root
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
