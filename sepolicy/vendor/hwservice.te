@@ -1,2 +1,1 @@
 type nfc_hwservice, hwservice_manager_type;
-type dcs_hwservice, hwservice_manager_type;
