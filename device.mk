@@ -97,6 +97,14 @@ PRODUCT_PACKAGES += \
     Snap \
     vendor.qti.hardware.camera.device@1.0.vendor
 
+# Camera Helper
+PRODUCT_PACKAGES += \
+    RealmeCameraHelper
+
+# camera Motor
+PRODUCT_PACKAGES += \
+    vendor.lineage.camera.motor@1.0-service.realme_sdm710
+
 # Context Hub
 PRODUCT_PACKAGES += \
     android.hardware.contexthub@1.0-impl.generic \
@@ -114,11 +122,6 @@ PRODUCT_PACKAGES += \
     libvulkan \
     vendor.display.config@1.7 \
     vendor.qti.hardware.display.allocator@1.0-service
-
-
-# Camera Helper
-PRODUCT_PACKAGES += \
-    RealmeCameraHelper
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -354,10 +357,6 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 # Seccomp policy
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/seccomp/mediacodec-seccomp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy
-
-# camera Motor
-PRODUCT_PACKAGES += \
-    vendor.lineage.camera.motor@1.0-service.realme_sdm710
 
 # Sensors
 PRODUCT_PACKAGES += \
