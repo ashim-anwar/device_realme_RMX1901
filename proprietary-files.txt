@@ -1,4 +1,4 @@
-# All unpinned blobs are from RMX1901EX_11_C.04
+# All unpinned blobs are from RMX1901_C.04
 
 # ACDB - Audio
 vendor/etc/acdbdata/18041/Bluetooth_cal.acdb
@@ -143,8 +143,14 @@ product/lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
 product/lib64/libaptXHD_encoder.so|e13fa70c97caaa24d061678bdee608eb8850a69e
 
 # Camera
-lib/libchromaflash.so
-lib64/libseemore.so
+vendor/lib/libPolarrRender.so
+vendor/lib64/libPolarrRender.so
+vendor/lib/libbokehclient.so
+vendor/lib64/libbokehclient.so
+vendor/lib64/libocam_common.so
+vendor/lib64/libocam_snapshot_intf.so
+vendor/lib/libocam_snapshot_intf.so
+vendor/lib/libocam_common.so
 vendor/lib/camera/com.qti.sensor.gc2375h.so
 vendor/lib/camera/com.qti.sensor.gc5035.so
 vendor/lib/camera/com.qti.sensor.hi846.so
@@ -370,6 +376,32 @@ vendor/lib64/vendor.qti.hardware.camera.device@1.0.so
 vendor/lib64/qcom.camera.log.so
 vendor/lib64/android.hardware.camera.provider@2.4-legacy.so
 vendor/lib64/android.hardware.camera.provider@2.4-external.so
+vendor/lib/libmm-omxcore.so
+vendor/lib64/libmm-omxcore.so
+vendor/lib/libst_personblur.so
+vendor/lib/libstblur_capture_api.so
+vendor/lib/libfastcrc.so
+vendor/lib/libiu456_datapath_filt_lib.so
+vendor/lib/libiu456_datapath_processor.so
+vendor/lib/libnnp.so
+vendor/lib/libobcdepth_hal.so
+vendor/lib/libOccluDetect.so
+vendor/lib/libSCES.so
+vendor/lib/libsdk_3d.so
+vendor/lib/libsdk_common.so
+vendor/lib/libthread_blur.so
+vendor/lib64/lib3DSlender.so
+vendor/lib64/libcomprcapture.so
+vendor/lib64/libcvp.so
+vendor/lib64/libcvp_common.so
+vendor/lib64/libcvp_stub.so
+vendor/lib64/libcvpcpuRev_skel.so
+vendor/lib64/libPerfectlyClearCrux.so
+vendor/lib64/libswresample.so
+vendor/lib64/libswscale.so
+vendor/lib/libblur_channel.so
+vendor/lib/libst_scb_dep1.so
+vendor/lib/libst_segmentation.so
 
 # Camera-arcsoft
 vendor/lib/libarcsoft_distortion_correction.so
@@ -415,10 +447,6 @@ vendor/etc/camera/oppo_camera_config.xml
 vendor/etc/camera/skinSeg.model
 vendor/etc/camera/vidhance_calibration
 
-# Camera-bin
-vendor/bin/hw/vendor.lineage.camera.motor@1.0-service.realme_sdm710
-vendor/bin/hw/vendor.oppo.hardware.camera.oppoAlgoProcessService@1.0-service
-
 # Camera-firmware
 vendor/firmware/CAMERA_ICP.elf
 
@@ -441,11 +469,6 @@ vendor/lib64/libsysmon_cdsp_skel.so
 
 # Charger - Firmware
 vendor/firmware/fastchg/18041/oppo_vooc_fw.bin
-
-# Camera-motor
-vendor/etc/init/hw/init.oppo.vendor.motor.rc
-vendor/etc/init/vendor.lineage.camera.motor@1.0-service.realme_sdm710.rc
-vendor/lib64/vendor.lineage.camera.motor@1.0.so
 
 # CNE
 -vendor/app/CneApp/CneApp.apk
@@ -652,17 +675,10 @@ vendor/lib/hw/vendor.qti.hardware.fm@1.0-impl.so
 vendor/lib/vendor.qti.hardware.fm@1.0.so
 
 # Fingerprint
-vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service.realme_sdm710
-vendor/bin/hw/vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.realme_sdm710
 vendor/bin/hw/vendor.oppo.hardware.biometrics.fingerprint@2.1-service
 vendor/bin/qfp-daemon
-vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.realme_sdm710.rc
-vendor/etc/init/vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.realme_sdm710.rc
 vendor/etc/init/vendor.oppo.hardware.biometrics.fingerprint@2.1-service.rc
 vendor/etc/permissions/qti_fingerprint_interface.xml
-vendor/etc/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml
-vendor/etc/vintf/manifest/android.hardware.biometrics.fingerprint@2.1-service.realme_sdm710.xml
-vendor/etc/vintf/manifest/vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.realme_sdm710.xml
 vendor/lib/hw/fingerprint.goodix_G2.default.so
 vendor/lib/hw/fingerprint.goodix_G3.default.so
 vendor/lib/libarm_proxy_skel.so
@@ -680,9 +696,6 @@ vendor/lib64/libhvx_proxy_stub.so
 vendor/lib64/libqfp-service.so
 vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
 vendor/lib64/libhypnusclient.so
-vendor/lib64/vendor.lineage.biometrics.fingerprint.inscreen@1.0.so
-vendor/lib64/vendor.oppo.hardware.biometrics.fingerprint@2.1.so
-vendor/lib/libhypnusclient.so
 
 # Fingerprint Firmware - Goodix (Extracted from vendor/euclid/product.img)
 vendor/firmware/goodixfp.mdt|9d314b60c91d063b6fe055ddb4bcd5eaa8d83892
@@ -1103,10 +1116,6 @@ vendor/lib/libOmxQcelp13Dec.so
 vendor/lib/libOmxSwVdec.so
 vendor/lib/libOmxSwVencMpeg4.so
 vendor/lib/libOmxWmaDec.so
-
-# NFC
-vendor/odm/etc/vintf/manifest_nfc_ese.xml
-vendor/odm/etc/vintf/manifest_secure_element_uicc.xml
 
 # Neural networks
 vendor/bin/hw/android.hardware.neuralnetworks@1.2-service-qti

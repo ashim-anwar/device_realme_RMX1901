@@ -95,6 +95,7 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-service_64 \
     libstdc++.vendor \
     Snap \
+    libgui_vendor \
     vendor.qti.hardware.camera.device@1.0.vendor
 
 # Camera Helper
@@ -322,6 +323,7 @@ PRODUCT_PACKAGES += \
     init.class_main.sh \
     init.oppo.reserve.rc \
     init.msm.usb.configfs.rc \
+    init.oppo.vendor.motor.rc \
     init.oppo.fingerprints.sh \
     init.qcom.early_boot.sh \
     init.qcom.post_boot.sh \

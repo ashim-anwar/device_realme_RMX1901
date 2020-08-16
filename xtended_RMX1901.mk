@@ -7,7 +7,7 @@
 # Inherit from RMX1901 device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
-# Inherit some common Xtended stuff
+# Inherit some common Lineage stuff
 $(call inherit-product, vendor/xtended/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.

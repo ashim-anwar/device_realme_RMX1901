@@ -1,1 +1,1 @@
-Device tree for Realme X
+Device tree for Realme XT
