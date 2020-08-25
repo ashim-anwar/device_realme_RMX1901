@@ -8,13 +8,22 @@
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 # Inherit some common Lineage stuff
-$(call inherit-product, vendor/xtended/config/common_full_phone.mk)
+$(call inherit-product, vendor/ancient/config/common_full_phone.mk)
+
+# Define Bootaniation
+TARGET_BOOT_ANIMATION_RES := 1080
+
+# Official-ify.
+ANCIENT_OFFICIAL := true
+FORCE_OTA := true
+ANCIENT_NOGAPPS := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_BRAND := Realme
 PRODUCT_DEVICE := RMX1901
 PRODUCT_MANUFACTURER := Realme
-PRODUCT_NAME := xtended_RMX1901
+PRODUCT_NAME := ancient_RMX1901
 PRODUCT_MODEL := Realme X
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
@@ -23,9 +32,3 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
 BUILD_FINGERPRINT := "google/coral/coral:10/QQ3A.200705.002/6506677:user/release-keys"
-
-# Maintainer
-PRODUCT_PROPERTY_OVERRIDES += \
-	ro.xtended.maintainer=hypercleric
-
-TARGET_BOOT_ANIMATION_RES := 1080
