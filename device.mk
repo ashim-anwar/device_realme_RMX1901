@@ -1,3 +1,4 @@
+
 #
 # Copyright (C) 2020 The LineageOS Project
 #
@@ -133,7 +134,8 @@ PRODUCT_PACKAGES += \
 # Doze
 PRODUCT_PACKAGES += \
     RealmeParts \
-    devicesettings
+    devicesettings \
+    RealmeProximityHelper
 
 # Fingerprint
 PRODUCT_PACKAGES += \
