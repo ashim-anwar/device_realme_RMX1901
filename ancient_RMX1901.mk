@@ -9,14 +9,13 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 # Inherit some common Lineage stuff
 $(call inherit-product, vendor/ancient/config/common_full_phone.mk)
-
-# Define Bootaniation
+TARGET_GAPPS_ARCH := arm64
+IS_PHONE := true
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Official-ify.
 ANCIENT_OFFICIAL := true
 FORCE_OTA := true
-ANCIENT_NOGAPPS := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
 # Device identifier. This must come after all inclusions.
