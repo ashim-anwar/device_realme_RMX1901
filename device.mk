@@ -360,7 +360,8 @@ PRODUCT_PACKAGES += \
     init.recovery.qcom.rc \
     init.target.rc \
     ueventd.qcom.rc \
-    init.devicesetting.rc
+    init.devicesetting.rc \
+    init.safailnet.rc
 
 # RCS
 PRODUCT_PACKAGES += \
