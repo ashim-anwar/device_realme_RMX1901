@@ -7,19 +7,16 @@
 # Inherit from RMX1901 device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
-# Inherit some common Evolution-X stuff
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
-TARGET_GAPPS_ARCH := arm64
-TARGET_FACE_UNLOCK_SUPPORTED := true
+# Inherit some common RevengeOS stuff
+$(call inherit-product, vendor/revengeos/config/common.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_BOOT_ANIMATION_RES_EVO := true
-TARGET_SUPPORTS_GOOGLE_RECORDER := false
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_BRAND := Realme
 PRODUCT_DEVICE := RMX1901
 PRODUCT_MANUFACTURER := Realme
-PRODUCT_NAME := aosp_RMX1901
+PRODUCT_NAME := revengeos_RMX1901
 PRODUCT_MODEL := Realme X
 
 PRODUCT_GMS_CLIENTID_BASE := android-oppo

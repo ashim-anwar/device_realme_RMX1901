@@ -144,7 +144,7 @@ PRODUCT_PACKAGES += \
     vendor.oppo.hardware.biometrics.fingerprint@2.1
 
 PRODUCT_COPY_FILES += \
-    vendor/aosp/config/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml:vendor/etc/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml
+    vendor/revengeos/config/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml:vendor/etc/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml
 
 # FM
 PRODUCT_PACKAGES += \
@@ -389,10 +389,6 @@ PRODUCT_PACKAGES += \
     android.hardware.thermal@1.0-impl \
     android.hardware.thermal@1.0-service \
     thermal.sdm710
-
-# Touch
-PRODUCT_PACKAGES += \
-    vendor.lineage.touch@1.0-service.RMX1901
     
 # Trust HAL
 PRODUCT_PACKAGES += \

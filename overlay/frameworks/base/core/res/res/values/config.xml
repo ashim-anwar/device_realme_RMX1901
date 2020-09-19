@@ -502,38 +502,8 @@
 	<item>com.google.android.googlequicksearchbox/com.google.android.hotword.service.HotwordService</item>
     </string-array>
 
-    <!-- Whether to show a custom view for FOD -->
-    <bool name="config_needCustomFODView">true</bool>
-
-    <!-- Smart charging sysfs node and value for suspend/resume charging -->
-    <string name="config_smartChargingSysfsNode" translatable="false">/sys/class/power_supply/battery/charging_enabled</string>
-    <string name="config_smartChargingSuspendValue" translatable="false">0</string>
-    <string name="config_smartChargingResumeValue" translatable="false">1</string>
-
-    <!-- Enable Smart charging -->
-    <bool name="config_smartChargingAvailable">true</bool>
-    <bool name="config_deviceSupportSmartCharging">true</bool>
-
-    <!-- Whether the device supports Smart Pixels -->
-    <bool name="config_enableSmartPixels">true</bool>
-
-    <!-- Whether to intercept inputs on screen off -->
-    <bool name="config_enableKeyHandler">true</bool>
-
-    <!-- Paths to the libraries that contain device specific key handlers -->
-    <string-array name="config_deviceKeyHandlerLibs" translatable="false">
-        <item>/system/priv-app/KeyHandler/KeyHandler.apk</item>
-        <item>/system/priv-app/TouchGestures/TouchGestures.apk</item>
-    </string-array>
-
-    <!-- Names of the key handler classes -->
-    <string-array name="config_deviceKeyHandlerClasses" translatable="false">
-        <item>org.lineageos.settings.device.KeyHandler</item>
-        <item>com.android.touch.gestures.KeyHandler</item>
-    </string-array>
-
-    <!-- Whether device has vooc charging support -->
-    <bool name="config_hasVoocCharger">true</bool>
+    <!-- Shows the required view for in-display fingerprint -->
+    <bool name="config_supportsInDisplayFingerprint">true</bool>
 
     <!-- Default value for proximity check on screen wake
          NOTE! - Enable for devices that have a fast response proximity sensor (ideally < 300ms)-->
