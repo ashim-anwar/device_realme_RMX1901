@@ -478,9 +478,7 @@
     <!--  Whether Multiuser UI should be shown -->
     <bool name="config_enableMultiUserUI">true</bool>
     
-    <!-- RMX1921 : Define dimensions of the notch -->
-    <string name="config_mainBuiltInDisplayCutout">M -143,0 L -143,76 L 143,76 L 143,0 Z</string>
-    
+    <!-- RMX1901 : Define dimensions  -->    
     <dimen name="status_bar_height_portrait">32.0dip</dimen>
     
     <dimen name="status_bar_icon_size">22.0dip</dimen>
@@ -616,8 +614,5 @@
 
     <!-- Whether device has screen with higher aspect ratio -->
     <bool name="config_haveHigherAspectRatioScreen">true</bool>
-
-    <!-- Whether device has a notch -->
-    <bool name="config_haveNotch">true</bool>
 
 </resources>
