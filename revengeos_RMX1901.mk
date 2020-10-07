@@ -10,7 +10,9 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 # Inherit some common RevengeOS stuff
 $(call inherit-product, vendor/revengeos/config/common.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_BOOT_ANIMATION_RES_EVO := true
+
+# Official-ify
+REVENGEOS_BUILDTYPE := OFFICIAL
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_BRAND := Realme
