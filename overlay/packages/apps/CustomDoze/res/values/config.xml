@@ -19,9 +19,6 @@
     <bool name="has_amd_tilt_sensor">true</bool>
 
     <!-- Defines the custom proximity sensor used by various OEMs like OnePlus-->
-    <string name="config_custom_tilt">"qti.sensor.amd"</string>
-
-    <!-- Defines the custom proximity sensor used by various OEMs like OnePlus-->
     <string name="config_custom_proximity">"qti.sensor.proximity_fake"</string>
 
 </resources>
