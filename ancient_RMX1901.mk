@@ -7,18 +7,22 @@
 # Inherit from RMX1901 device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
-# Inherit some common RevengeOS stuff
-$(call inherit-product, vendor/revengeos/config/common.mk)
+# Inherit some common Ancient stuff
+$(call inherit-product, vendor/ancient/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Official-ify
-REVENGEOS_BUILDTYPE := OFFICIAL
+ANCIENT_OFFICIAL := true
+FORCE_OTA := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_USES_BLUR := true
+EXTRA_FOD_ANIMATIONS := true
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_BRAND := Realme
 PRODUCT_DEVICE := RMX1901
 PRODUCT_MANUFACTURER := Realme
-PRODUCT_NAME := revengeos_RMX1901
+PRODUCT_NAME := ancient_RMX1901
 PRODUCT_MODEL := Realme X
 
 PRODUCT_GMS_CLIENTID_BASE := android-oppo
