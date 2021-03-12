@@ -14,4 +14,7 @@
 <resources>
     <!-- Default fod pressed color -->
     <integer name="config_fod_pressed_color">5</integer>
+
+    <!-- Custom proximity sensor to be used for pocket detection and doze -->
+    <string name="config_customProximitySensor">"qti.sensor.proximity_fake"</string>
 </resources>
