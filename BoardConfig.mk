@@ -7,6 +7,7 @@
 DEVICE_PATH := device/realme/RMX1901
 
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
+BUILD_BROKEN_VENDOR_PROPERTY_NAMESPACE := true
 
 # APEX
 DEXPREOPT_GENERATE_APEX_IMAGE := true
@@ -153,7 +154,8 @@ include device/qcom/sepolicy_vndr/SEPolicy.mk
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
 SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/public
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
-BUILD_BROKEN_VENDOR_PROPERTY_NAMESPACE := true
+BOARD_SEPOLICY_M4DEFS += \
+    persist_camera_prop=vendor_persist_camera_prop
 
 # Verified Boot
 BOARD_AVB_ENABLE := true

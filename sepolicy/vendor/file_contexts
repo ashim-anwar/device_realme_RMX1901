@@ -31,6 +31,9 @@
 # Sharedmem
 /sys/devices/platform/soc/0.qcom,oembackup_sharedmem/uio/uio[0-9]+(/.*)?         u:object_r:sysfs_uio_file:s0
 
+# Sys files
+/sys/devices/platform/vendor/vendor:motor_pl(/.*)?                 u:object_r:sysfs_motor:s0
+
 # Touch
 /(vendor|system/vendor)/bin/hw/vendor\.lineage\.touch@1\.0-service\.oplus    u:object_r:hal_lineage_touch_default_exec:s0
 

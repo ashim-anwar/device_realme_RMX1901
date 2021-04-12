@@ -1,0 +1,3 @@
+# Allow system apps to access sysfs_motor
+allow system_app sysfs_motor:dir search;
+allow system_app sysfs_motor:file { getattr open read write };
