@@ -196,7 +196,6 @@ PRODUCT_USES_QCOM_HARDWARE := true
 
 # Health
 PRODUCT_PACKAGES += \
-    android.hardware.health@2.0-impl \
     android.hardware.health@2.0-service
 
 # HIDL
@@ -313,7 +312,8 @@ PRODUCT_COPY_FILES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service-qti \
+    android.hardware.power@1.0-impl \
+    android.hardware.power@1.0-service \
     android.hardware.power.stats@1.0-service.mock \
     vendor.qti.hardware.perf@2.0.vendor
 
