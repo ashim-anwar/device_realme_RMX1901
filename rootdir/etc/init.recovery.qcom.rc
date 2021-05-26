@@ -48,6 +48,7 @@ on property:ro.boot.usbconfigfs=false
    setprop sys.usb.configfs 0
 
 on property:ro.boot.recover_usb=*
+    wait /sys/bus/platform/devices/${ro.boot.usb.dwc3_msm:-a600000.ssusb}/mode
     write /sys/bus/platform/devices/${ro.boot.usb.dwc3_msm:-a600000.ssusb}/mode peripheral
 
 on property:ro.boot.usbcontroller=*
