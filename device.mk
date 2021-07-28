@@ -120,6 +120,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vendor.lineage.camera.motor@1.0-service.realme_sdm710
 
+# Charger
+PRODUCT_PACKAGES += \
+    libsuspend
+
 # Context Hub
 PRODUCT_PACKAGES += \
     android.hardware.contexthub@1.0-impl.generic \
