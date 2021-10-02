@@ -1,0 +1,14 @@
+[
+  {
+    "remote": "github",
+    "repository" : "Sathamspot/kernel_realme_RMX1901",
+    "target_path": "kernel/realme/RMX1901",
+    "branch": "11"
+  },
+  {
+    "remote": "github",
+    "repository" : "Sathamspot/vendor_realme_RMX1901",
+    "target_path": "vendor/realme/RMX1901",
+    "branch": "11"
+  }
+]
