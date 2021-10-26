@@ -2,6 +2,13 @@
 /mnt/vendor/persist/audio(/.*)?                                                u:object_r:persist_audio_file:s0
 /proc/asound/card0/codecs(/.*)?                                                u:object_r:proc_audio_file:s0
 
+# Biometrics
+/(vendor|system/vendor)/bin/hw/vendor\.oppo\.hardware\.biometrics\.fingerprint@2\.1-service              u:object_r:hal_fingerprint_default_exec:s0
+/(vendor|system/vendor)/lib(64)?/vendor\.oppo\.hardware\.biometrics\.fingerprint@2\.1\.so    u:object_r:same_process_hal_file:s0
+
+/(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.1-service\.x           u:object_r:hal_fingerprint_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.3-service\.x           u:object_r:hal_fingerprint_default_exec:s0
+
 # Data files
 /data/vendor/dolby(/.*)?   u:object_r:vendor_data_file:s0
 
@@ -17,11 +24,6 @@
 
 # Goodix Fingerprint device
 /dev/goodix_fp                                                                                           u:object_r:goodix_device:s0
-
-# Biometrics
-/(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.1-service\.realme_sdm710           u:object_r:hal_fingerprint_default_exec:s0
-/(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.3-service\.realme_sdm710           u:object_r:hal_fingerprint_default_exec:s0
-/(vendor|system/vendor)/bin/hw/vendor\.oppo\.hardware\.biometrics\.fingerprint@2\.1-service              u:object_r:hal_fingerprint_default_exec:s0
 
 # Composer
 /(system)/lib(64)?/android\.hardware\.graphics\.composer[0-9]+\.[0-9]+\.so    u:object_r:same_process_hal_file:s0
