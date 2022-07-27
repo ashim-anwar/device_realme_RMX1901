@@ -192,7 +192,7 @@ PRODUCT_PACKAGES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light-service.xiaomi
+    android.hardware.light-service.x
 
 # Media
 PRODUCT_PACKAGES += \
@@ -312,7 +312,6 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/google/interfaces \
     hardware/google/pixel \
-    hardware/xiaomi \
     vendor/qcom/opensource/usb/etc
 
 # Telephony
