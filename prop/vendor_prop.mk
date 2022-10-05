@@ -77,6 +77,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
+    bluetooth.device.default_name=realme X \
     persist.bluetooth.a2dp_offload.disabled=true \
     persist.bluetooth.a2dp_offload.cap=sbc-aac-aptx-aptxhd-ldac \
     persist.vendor.bt.aac_frm_ctl.enabled=true \
@@ -216,7 +217,7 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 
 # Usb
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-    vendor.usb.product_string=Realme X \
+    vendor.usb.product_string=realme X \
     persist.vendor.usb.config.extra=none \
     vendor.usb.dpl.inst.name=dpl \
     vendor.usb.rmnet.func.name=rmnet_bam \
