@@ -56,15 +56,7 @@ endif
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
 
 # Fingerprint
-ifeq ($(TARGET_HAS_UDFPS),true)
-TARGET_SURFACEFLINGER_UDFPS_LIB := //hardware/xiaomi:libudfps_extension.xiaomi
-endif
 
-# FM
-ifeq ($(TARGET_HAS_FM),true)
-BOARD_HAS_QCA_FM_SOC := "cherokee"
-BOARD_HAVE_QCOM_FM := true
-endif
 
 # Kernel
 BOARD_BOOT_HEADER_VERSION := 2
@@ -169,12 +161,6 @@ BOARD_AVB_RECOVERY_ROLLBACK_INDEX_LOCATION := 1
 
 # VINTF
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
-ifeq ($(TARGET_HAS_FM),true)
-DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest_fm.xml
-endif
-ifeq ($(TARGET_HAS_NFC),true)
-DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest_nfc.xml
-endif
 DEVICE_MATRIX_FILE += $(DEVICE_PATH)/compatibility_matrix.xml
 
 # VNDK
