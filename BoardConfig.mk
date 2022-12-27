@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/xiaomi/sdm710-common
+DEVICE_PATH := device/realme/RMX1901
 
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 
@@ -25,6 +25,9 @@ TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := generic
 TARGET_2ND_CPU_VARIANT_RUNTIME := kryo385
+
+# Assertion
+TARGET_OTA_ASSERT_DEVICE := RMX1901,RMX1901CN
 
 # Audio
 AUDIO_FEATURE_ENABLED_EXTENDED_COMPRESS_FORMAT := true
@@ -73,8 +76,8 @@ BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 BOARD_KERNEL_SEPARATED_DTBO := true
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
-TARGET_KERNEL_SOURCE := kernel/xiaomi/sdm710
-TARGET_KERNEL_CONFIG := sdm670-perf_defconfig xiaomi/sdm710-common.config
+TARGET_KERNEL_SOURCE := kernel/realme/RMX1901
+TARGET_KERNEL_CONFIG := RMX1901_defconfig
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 262144 # (BOARD_KERNEL_PAGESIZE * 64)
@@ -119,7 +122,7 @@ $(foreach p, $(call to-upper, $(TREBLE_PARTITIONS)), \
     $(eval BOARD_$(p)IMAGE_PARTITION_RESERVED_SIZE := 30720000))
 
 # Platform
-BOARD_VENDOR := xiaomi
+BOARD_VENDOR := realme
 BOARD_USES_QCOM_HARDWARE := true
 TARGET_BOARD_PLATFORM := sdm710
 
@@ -193,4 +196,4 @@ WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit the proprietary files
-include vendor/xiaomi/sdm710-common/BoardConfigVendor.mk
+include vendor/realme/RMX1901/BoardConfigVendor.mk

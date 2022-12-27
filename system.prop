@@ -37,6 +37,9 @@ ro.charger.enable_suspend=true
 persist.vendor.data.mode=concurrent
 ro.vendor.use_data_netmgrd=true
 
+# Device model
+ro.product.model=RMX1901
+
 # Display
 ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
 ro.surface_flinger.max_frame_buffer_acquired_buffers=3
