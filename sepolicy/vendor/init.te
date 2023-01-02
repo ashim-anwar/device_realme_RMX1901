@@ -1,1 +1,1 @@
-allow init socket_device:sock_file { unlink setattr create };
+allow init init:capability2 { mac_admin };

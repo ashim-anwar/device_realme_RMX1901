@@ -1,1 +1,10 @@
-set_prop(rild, deviceid_prop)
+allow rild mnt_vendor_file:dir search;
+
+allow rild vendor_proc_display:file r_file_perms;
+
+r_dir_file(rild, vendor_proc_engineer)
+
+set_prop(rild, vendor_nw_exported_system_prop)
+
+allow rild block_device:dir { search };
+allow rild proc_devinfo:dir { search };

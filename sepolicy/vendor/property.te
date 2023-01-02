@@ -1,7 +1,11 @@
-vendor_internal_prop(vendor_thermal_normal_prop)
+# Fingerprint
+vendor_internal_prop(vendor_camera_prop)
 
-vendor_internal_prop(vendor_dpps_prop)
+# Fingerprint
+vendor_internal_prop(vendor_fingerprint_prop)
 
-vendor_public_prop(vendor_fp_prop)
+# Modem
+vendor_internal_prop(vendor_modem_prop)
 
-vendor_internal_prop(vendor_power_prop)
+# RIL
+vendor_internal_prop(vendor_nw_exported_system_prop)

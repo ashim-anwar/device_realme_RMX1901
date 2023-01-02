@@ -1,1 +1,5 @@
-vendor_public_prop(deviceid_prop)
+# Fingerprint
+vendor_internal_prop(system_fingerprint_prop)
+
+# Version
+system_vendor_config_prop(system_oplus_project_prop)
