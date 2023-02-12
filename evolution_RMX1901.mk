@@ -22,17 +22,21 @@ TARGET_USES_MINI_GAPPS := true
 # Inherit from RMX1901 device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
-PRODUCT_BRAND := Realme
+PRODUCT_BRAND := realme
 PRODUCT_DEVICE := RMX1901
-PRODUCT_MANUFACTURER := Realme
+PRODUCT_MANUFACTURER := realme
 PRODUCT_NAME := evolution_RMX1901
-PRODUCT_MODEL := Realme X
+PRODUCT_MODEL := RMX1901
+
+PRODUCT_SYSTEM_NAME := RMX1901
+PRODUCT_SYSTEM_DEVICE := RMX1901
 
 PRODUCT_GMS_CLIENTID_BASE := android-oppo
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="cheetah-user 13 TQ1A.230205.002 9471150 release-keys" \
-    PRODUCT_NAME="RMX1901"
+    TARGET_DEVICE=RMX1901 \
+    TARGET_PRODUCT=RMX1901
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
 BUILD_FINGERPRINT := google/cheetah/cheetah:13/TQ1A.230205.002/9471150:user/release-keys
