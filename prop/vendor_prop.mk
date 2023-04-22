@@ -175,6 +175,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.use_content_detection_for_refresh_rate=true \
     ro.surface_flinger.protected_contents=true
     debug.sf.auto_latch_unsignaled=true
+    debug.sf.enable_gl_backpressure=1
 
 # IMS
 PRODUCT_PROPERTY_OVERRIDES += \
