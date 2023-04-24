@@ -8,7 +8,7 @@ git clone git@github.com:RMX1901/kernel_realme_RMX1901.git -b x.319 kernel/realm
 
 # Realme In-Screen Proximity Patch
 echo 'Patching Realme In-Screen Proximity [3/5]'
-cd frameworks/base && git fetch git@github.com:ashim-anwar/proximity_patch.git 13 && git cherry-pick 415118ebea7a0cc64801f1cf36ca2385674cdb3b && cd ../..
+cd frameworks/base && git fetch git@github.com:ashim-anwar/proximity_patch.git 13 && git cherry-pick 30ea88924980002d94fb8e2bf4a5016905ca6914 && cd ../..
 
 # Use Proton Clang For Compilation
 echo ' Cloning Proton Clang For Compilation [4/5]'
