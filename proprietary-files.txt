@@ -103,9 +103,11 @@ vendor/lib/hw/audio.primary.sdm710.so
 vendor/lib/libaudioEngineerTest.so
 vendor/lib/libaudio_log_utils.so
 
-# Audio FX modules
-etc/permissions/audiosphere.xml
-framework/audiosphere.jar
+# Audio FX modules (system) - from LA.QSSI.13.0.r1-09700-qssi.0
+system_ext/etc/permissions/audiosphere.xml|015ad7be4921039238bfa3d34d052d752453e49c
+system_ext/framework/audiosphere.jar|3c42dff6da0571acd9ea466983c7f6354d588bb3
+
+# Audio FX Modules (vendor)
 vendor/lib64/soundfx/libasphere.so
 vendor/lib64/soundfx/libqcbassboost.so
 vendor/lib64/soundfx/libqcreverb.so
