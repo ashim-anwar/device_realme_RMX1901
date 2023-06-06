@@ -1258,10 +1258,11 @@ vendor/lib64/vendor.qti.hardware.alarm@1.0.so|c7c418cfc889a89ea4f21bf828f626c75a
 vendor/bin/hw/android.hardware.health@2.1-service|977491e82ca92e267e88f4f8ed655dad0c9fbd83
 vendor/etc/init/android.hardware.health@2.1-service.rc|07814dfd61ba11205f1ad730828a9d8d3b7df509
 
-# QMI - from LA.QSSI.12.0.r1-05800.02-qssi.0
-etc/permissions/qti_libpermissions.xml|593bcb72cce68ceb0a70f50bcae7d460114e7c62
-etc/permissions/qti_permissions.xml|e6ff4572352b1a4f91b6b9d7cbb1cad9924410a0
+# QMI (system) - from LA.QSSI.13.0.r1-09700-qssi.0
+system_ext/etc/permissions/qti_libpermissions.xml|593bcb72cce68ceb0a70f50bcae7d460114e7c62
+system_ext/etc/permissions/qti_permissions.xml|e6ff4572352b1a4f91b6b9d7cbb1cad9924410a0
 
+# QMI (vendor)
 vendor/bin/irsc_util
 vendor/etc/sec_config
 vendor/lib64/libdiag.so
