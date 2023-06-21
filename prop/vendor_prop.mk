@@ -148,10 +148,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.qti.inputopts.movetouchslop=0.6 \
     ro.qcom.adreno.qgl.ShaderStorageImageExtendedFormats=0
 
-# FS-verity
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.apk_verity.mode=2
-
 # FRP
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.frp.pst=/dev/block/bootdevice/by-name/frp
