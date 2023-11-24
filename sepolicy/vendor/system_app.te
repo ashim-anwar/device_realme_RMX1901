@@ -28,3 +28,7 @@ allow system_app {
 allow system_app sysfs_leds:dir search;
 allow system_app proc_vibration_file:dir search;
 allow system_app sysfs_leds:lnk_file { getattr open read write };
+
+# Allow system apps to access sysfs_motor
+allow system_app sysfs_motor:dir search;
+allow system_app sysfs_motor:file { getattr open read write };
